@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"></i>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></i>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></i>
+    <link rel="icon" href="./images/logo.png" type="image/x-icon">
+    <title>MovieS</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="relative overflow-hidden bg-[#191817]">
+        <div class="flex justify-between">
+            <div class="sidebar w-[250px] h-screen bg-[#21201E]">
+                <div class="!text-white">
+                    <div class="side-bar-custom !h-16 w-screen bg-[#21201E] flex p-3 items-center justify-between">
+                        <a href="http://127.0.0.1:5500/BtLon/TrangChuChuaDangNhap.html" class="order-1 xl:order-none">
+                            <img src="./images/logo-dark.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="w-full py-2 px-[32px]">
+                        <p class="text-sm text-[#A4A4A4]">MENU</p>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-search"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Tìm kiếm
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-video"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Danh sách xem
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-calendar"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Sắp chiếu
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full py-2 px-[32px]">
+                        <p class="text-sm text-[#A4A4A4]">TƯƠNG TÁC</p>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-user-friends"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Bạn bè
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-users"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Cộng đồng
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full py-2 px-[32px]">
+                        <p class="text-sm text-[#A4A4A4]">TÙY CHỈNH</p>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-cog"></i>
+                            <p class="mb-0 text-[14px] ">
+                                Cài đặt
+                            </p>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 h-[48px] cursor-pointer text-[#D0D0D0] hover:text-white transition duration-150 ease-out hover:ease-in">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <a href="http://127.0.0.1:5500/BtLon/dang-nhap.html" to="dang-nhap"
+                                class="mb-0 text-[14px] ">
+                                Đăng nhập
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-screen w-[calc(100vw-560px)] overflow-auto">
+                <div class="w-full z-[100] sm:z-[101]">
+                    <div class="w-full p-[30px] bg-transparent fixed z-10">
+                        <div class="flex justify-start items-start gap-6 text-[#D0D0D0]">
+                            <a href="http://127.0.0.1:5500/BtLon/phim-le.html" class="cursor-pointer">Phim lẻ</a>
+                            <a href="http://127.0.0.1:5500/BtLon/phim-bo.html" class="cursor-pointer">Phim bộ</a>
+                            <a href="/" class="cursor-pointer">TV Series</a>
+                            <a href="http://127.0.0.1:5500/BtLon/member.html" class="cursor-pointer">Giới thiệu thành
+                                viên</a>
+                            <a href="http://127.0.0.1:5500/BtLon/admin.html" class="cursor-pointer">Thêm phim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-[80px] px-[20px]">
+                    <h1 class="text-[36px] text-[#D0D0D0] mb-8">Phim lẻ</h1>
+                    <div id="listFilmSingle" class="grid grid-cols-5 gap-4 justify-between">
+                    </div>
+                </div>
+            </div>
+            <div class="list-sidebar  w-[310px] col-span-2 h-screen bg-[#21201E] z-50">
+                <div>
+                    <div
+                        class="!h-16 w-full bg-[#21201E] relative  z-[100] !text-white flex py-3 px-[32px] gap-5 items-center justify-start">
+                        <div>
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <a href="http://127.0.0.1:5500/BtLon/dang-nhap.html" class="mb-0 text-[14px] ">
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <div class=" overflow-auto h-[calc(100vh-64px)]">
+                        <div class="w-full py-2 px-[28px] pb-4 border-b border-[#484744] ">
+                            <h2 class="text-white text-[20px]  mb-[10px]">
+                                Tiếp tục xem
+                            </h2>
+                            <div class="" id="viewFilm"></div>
+                            <button
+                                class="rounded-full border text-white border-[#2D2D2B] flex items-center justify-center w-full bg-[#191817] py-3 px-5">
+                                Hiện thêm
+                            </button>
+                        </div>
+                        <div class="w-full py-2 px-[32px] pb-4 border-b border-[#484744]">
+                            <h2 class="text-white text-[20px]  mb-[10px]">
+                                Danh sách xem
+                            </h2>
+                            <div id="listFilm"></div>
+                            <button
+                                class="rounded-full border text-white border-[#2D2D2B] flex items-center justify-center w-full bg-[#191817] py-3 px-5">
+                                Hiện thêm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const listFilmSingle = [
+            {
+                name: 'No Time To Die',
+                image: './images/notime.png',
+            },
+            {
+                name: 'Mortal Kombat ',
+                image: './images/combat.png',
+            },
+            {
+                name: 'Big Mouth',
+                image: './images/bigmouth.png',
+            },
+            {
+                name: 'Fullmetal Alchemist',
+                image: './images/gost.png',
+            },
+            {
+                name: 'Minions \nThe Rise of GRU',
+                image: './images/minion.png',
+            },
+        ];
+        const viewFilm = [
+            {
+                name: 'Sonic the hodgehog 2 (2021)',
+                topic: 'Phiêu lưu, viễn tưởng',
+                image: './images/sonic.png',
+            },
+            {
+                name: 'Orphan : First Kill (2022)',
+                topic: 'Kinh dị, giật gân ',
+                image: './images/orphan.png',
+            },
+            {
+                name: 'House of The Dragon (2022)',
+                topic: 'Kinh dị, giật gân ',
+                image: './images/dragon.png',
+            },
+        ];
+        const listFilm = [
+            {
+                name: 'Dota: Dragon\'s Blood (2021)',
+                topic: 'Phiêu lưu',
+                image: './images/dota.png',
+            },
+            {
+                name: 'Venom: Let There Be Carnage',
+                topic: 'Khoa học, viễn tưởng ',
+                image: './images/venom.png',
+            },
+            {
+                name: 'Resident Evil: The Final Chapter',
+                topic: 'Kinh dị, giật gân ',
+                image: './images/resident.png',
+            }
+        ];
+        for (var i = 0; i < viewFilm.length; i++) {
+            document.getElementById('viewFilm').innerHTML += `
+            <div class="flex items-center justify-center gap-3 mb-[14px]">
+                                <img class="rounded-md" src="${viewFilm[i].image}" alt="/">
+                                <div class="flex items-start flex-col justify-center">
+                                    <a href="http://127.0.0.1:5500/BtLon/chi-tiet.html" class="!text-white text-[16px]">
+                                        ${viewFilm[i].name}
+                                    </a>
+                                    <p class="text-[#D0D0D0] text-[12px]">
+                                        ${viewFilm[i].topic}
+                                    </p>
+                                </div>
+                            </div>
+            `
+        }
+        for (var i = 0; i < listFilm.length; i++) {
+            document.getElementById('listFilm').innerHTML += `
+            <div class="flex items-center justify-center gap-3 mb-[14px]">
+                                <img class="rounded-md" src="${listFilm[i].image}" alt="/">
+                                <div class="flex items-start flex-col justify-center">
+                                    <a href="http://127.0.0.1:5500/BtLon/chi-tiet.html" class="!text-white text-[16px]">
+                                        ${listFilm[i].name}
+                                    </a>
+                                    <p class="text-[#D0D0D0] text-[12px]">
+                                        ${listFilm[i].topic}
+                                    </p>
+                                </div>
+                            </div>
+            `
+        }
+        for (var i = 0; i < listFilmSingle.length; i++) {
+            document.getElementById('listFilmSingle').innerHTML += `
+            <a href="http://127.0.0.1:5500/BtLon/chi-tiet.html">
+                <div class="flex flex-col items-center">
+                    <img class="w-full" src="${listFilmSingle[i].image}" alt="/"/>
+                    <h3 class="text-[#D0D0D0] text-[16px] mt-3">${listFilmSingle[i].name}</h3>
+                </div>
+            </a>
+            `
+        }
+    </script>
+</body>
+
+</html>
